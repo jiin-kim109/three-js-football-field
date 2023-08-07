@@ -113,16 +113,7 @@ window.onload = () => {
     // hemiLight.groundColor.setHSV( 0.095, 0.5, 0.5 );
     hemiLight.position.set( 0, 500, 0 );
     scene.add( hemiLight );
-    /*
-    const pointLight = new Three.PointLight(0xffffff, 0.5);
-    pointLight.position.set(-5, 100, 100);
-    const plHelper = new Three.PointLightHelper(pointLight, 0.1, 0x0000ff);
-    pointLight.castShadow = true;
-    pointLight.shadow.mapSize.width = 2048;
-    pointLight.shadow.mapSize.height = 2048;
-    scene.add(plHelper);
-    scene.add(pointLight);
-    */
+
     const directionalLight = new Three.DirectionalLight(0xffffff, 1.7);
     directionalLight.position.set(-5, 0.75, 1);
     directionalLight.position.multiplyScalar(100);
